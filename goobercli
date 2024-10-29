@@ -1,0 +1,25 @@
+<?php
+require 'GooberLog.php';
+require __DIR__ . '/vendor/autoload.php';
+
+
+$command = isset($argv[1]) ? $argv[1] : '';
+
+switch ($command) {
+    case 'hello':
+        echo "Hello World";
+        break;
+    case 'start':
+        GooberLog::info("Server started at http://127.0.0.1:80");
+
+        $output = shell_exec("php -S 127.0.0.1:80 -t " . __DIR__ . "/public");
+        break;
+    case 'docker':
+        $output = shell_exec("docker run -p 80:80 gooberblox");
+        break;
+    case 'shell':
+        $output = shell_exec("sudo docker run -it --entrypoint /bin/bash gooberblox");
+        break;
+    default:
+        break;
+}

@@ -1,0 +1,14 @@
+{
+  "Mode": "Thumbnail",
+  "Settings": {
+    "Type": "Place",
+    "Arguments": [
+      "http://www.goober.biz/asset/?id={id}",
+      "Png",
+      953,
+      618,
+      "http://www.goober.biz/",
+      {id}
+    ]
+  }
+}

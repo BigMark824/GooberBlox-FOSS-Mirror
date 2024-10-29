@@ -1,0 +1,19 @@
+{
+  "require": {
+      "symfony/yaml": "^6.4",
+      "twig/twig": "^3.8",
+      "ext-curl": "*",
+      "ext-pdo": "*",
+      "aws/aws-sdk-php": "^3.302",
+      "predis/predis": "^2.2",
+      "phpgangsta/googleauthenticator": "dev-master",
+      "virtubrick/grid": "v1.0.1",
+    "zendframework/zend-soap": "^2.5"
+  },
+  "autoload": {
+      "psr-4": {
+          "App\\": "app/",
+          "Virtubrick\\Grid\\": "vendor/virtubrick/grid"
+      }
+  }
+}

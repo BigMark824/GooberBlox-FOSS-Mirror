@@ -1,0 +1,450 @@
+html, body {
+
+    color-scheme: dark;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: 'Arial', sans-serif;
+
+    background-color: rgba(91,98,44,255);
+
+    background-image: url('/images/2560x1440-dark-abstract-black-minimal_1596927735.jpg');
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    margin: 0;
+    position: relative;
+    background-color: #87CEEB; /* Sky Blue background color, you can change this */
+    animation: snowfall linear infinite;
+}
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+.upperbar {
+
+    height: 50px;
+
+    background-color: #1779cc;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 16px;
+
+    border-bottom: 2px solid #1779cc;
+    z-index: 5;
+}
+
+
+
+.lowerbar {
+
+
+
+    height: 35px;
+
+    background-color: rgb(23, 23, 23);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 10px 16px;
+
+
+
+}
+
+.notification {
+
+    width: auto;
+
+    height: auto;
+
+    padding: 12px 20px;
+
+    margin: 0;
+
+    background-color: #f68802;
+
+    color: #fff;
+
+    text-align: center;
+
+}
+
+.criticalNotification {
+
+    width: auto;
+
+    height: auto;
+
+    padding: 12px 20px;
+
+    margin: 0;
+
+    background-color: #ff4242B5;
+
+    text-align: center;
+
+    font-family: "Source Code Pro" , monospace;
+}
+
+.infoNotification {
+    width: auto;
+
+    height: auto;
+
+    padding: 12px 20px;
+
+    margin: 0;
+
+    background-color: #ff8a42;
+
+    text-align: center;
+
+    font-family: "Source Code Pro" , monospace;
+}
+
+
+
+.button-container {
+
+    margin-top: 10px;
+
+}
+
+
+
+.btn-medium,
+
+.btn-neutral,
+
+.btn-neutral:link,
+
+.btn-neutral:visited,
+
+.btn-primary-md,
+
+.signup-submit-button,
+
+.ControlLoginButton {
+
+    margin-top: 10px;
+
+    background-color: #02b757;
+
+    border-color: #02b757;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    font-weight: 400;
+
+    height: auto;
+
+    transition: all, 0.2s, ease-in-out;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    vertical-align: middle;
+
+    padding: 10px 25px;
+
+    line-height: 100%;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+}
+
+
+
+.headerbtn {
+
+    font-size: 16px;
+
+    line-height: 100%;
+
+    text-decoration: none;
+
+    border: none;
+
+    color: white;
+
+    padding: 8px 8px;
+
+}
+
+
+
+.btn-medium {
+
+    min-height: 28px;
+
+    min-width: 62px;
+
+    font-size: 20px;
+
+}
+
+
+
+.headerbtn:hover {
+
+    background-color: #373738;
+
+}
+
+
+
+.btn-neutral:hover,
+
+.ControlLoginButton:hover {
+
+    background-color: #3FC679;
+
+    box-shadow: 0 1px 3px rgba(150,150,150,0.74);
+
+    border-color: #3FC679;
+
+    color: #fff;
+
+    cursor: pointer;
+
+}
+
+
+
+.btn-neutral:active {
+
+    background-color: #3FC679;
+
+    box-shadow: 0 1px 3px rgba(150,150,150,0.74);
+
+    border-color: #3FC679;
+
+    color: #fff;
+
+    cursor: pointer;
+
+}
+
+
+
+.center {
+
+    display: block;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    width: 60%;
+
+    margin-bottom: 2.5px;
+
+}
+
+
+
+.headerbtn:active {
+
+    background-color: #373738;
+
+}
+
+
+
+.signup-submit-button,
+
+.ControlLoginButton {
+
+    box-shadow: 0 1px 3px rgba(150,150,150,0.74);
+
+    border-color: #3FC679;
+
+    color: #fff;
+
+    cursor: pointer;
+
+}
+
+.loginpage,
+
+.HomePage {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: black;
+
+}
+
+
+
+form {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 25px;
+
+    background-color: #212529;
+
+    color: white;
+
+}
+
+
+
+
+
+.prev,
+
+.next {
+
+    cursor: pointer;
+
+    position: absolute;
+
+    top: 50%;
+
+    padding: 16px;
+
+    color: white;
+
+    font-size: 18px;
+
+    transition: 0.6s ease;
+
+    border-radius: 0 3px 3px 0;
+
+    user-select: none;
+
+}
+
+
+
+.next {
+
+    right: 0;
+
+    border-radius: 3px 0 0 3px;
+
+}
+
+
+
+.prev:hover,
+
+.next:hover {
+
+    background-color: rgba(0,0,0,0.8);
+
+}
+
+
+
+.text {
+
+    font-size: 15px;
+
+    position: absolute;
+
+    bottom: 8px;
+
+    width: 100%;
+
+    text-align: center;
+
+}
+
+
+
+h1 {
+
+    color: white;
+
+}
+
+.numbertext {
+
+    font-size: 12px;
+
+    position: absolute;
+
+    top: 0;
+
+}
+
+
+
+.dot {
+
+    cursor: pointer;
+
+    height: 15px;
+
+    width: 15px;
+
+    margin: 0 2px;
+
+    border-radius: 50%;
+
+    display: inline-block;
+
+    transition: background-color 0.6s ease;
+
+    background-color: #bbb;
+
+}
+
+
+
+.active,
+
+.dot:hover {
+
+    background-color: #717171;
+
+}
+
+
+
+.fade {
+
+    animation-name: fade;
+
+    animation-duration: 1.5s;
+
+}
+
+@keyframes fade {
+
+    from { opacity: .4; }
+
+    to { opacity: 1; }
+
+}

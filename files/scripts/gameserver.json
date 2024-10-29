@@ -1,0 +1,23 @@
+{
+    "Mode": "GameServer",
+    "Settings": {
+        "PlaceId": {placeId},
+        "CreatorId": 1,
+        "GameId": "{jobId}",
+        "MachineAddress": "127.0.0.1",
+        "MaxPlayers": 30,
+        "GsmInterval": 5,
+        "MaxGameInstances": 5,
+        "PreferredPlayerCapacity": 30,
+        "UniverseId": 2,
+        "BaseUrl": "doober.biz",
+        "PlaceFetchUrl": "https://www.doober.biz/asset/?id={placeId}",
+        "MatchmakingContextId": 1,
+        "CreatorType": "User",
+        "PlaceVersion": 1,
+        "JobId": "{jobId}",
+        "PreferredPort": {port},
+        "ApiKey": "0d045403-9d2f-40e3-8890-386e390df8bd",
+        "PlaceVisitAccessKey": "0d045403-9d2f-40e3-8890-386e390df8bd"
+    }
+}

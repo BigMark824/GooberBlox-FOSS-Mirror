@@ -1,0 +1,13 @@
+{
+    "Mode": "Thumbnail",
+    "Settings": {
+      "Type": "Avatar_R15_Action",
+      "Arguments": [
+        "http://www.goober.biz/",
+        "http://www.goober.biz/v1.1/avatar-fetch/?&userId={id}",
+        "{file}",
+        840,
+        840
+      ]
+    }
+  }
